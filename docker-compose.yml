@@ -1,0 +1,19 @@
+version: '3'
+
+volumes:
+  mongo:
+    driver: local
+
+services:
+  mongodb:
+    image: 'bitnami/mongodb:latest'
+    container_name: omniStack9
+    ports:
+      - "8081:27017"
+    volumes:
+      - ./mongo:/bitnami
+    environment:
+      - MONGODB_USERNAME=user
+      - MONGODB_PASSWORD=mudar123
+      - MONGODB_DATABASE=nodeapi
+      - MONGODB_REPLICA_SET_NAME="replicaset"
