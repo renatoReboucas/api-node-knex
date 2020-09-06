@@ -22,7 +22,7 @@ setar filename, local onde vai ficar salvo o db e o local onde vai ficar as migr
 
 ## criar migrate
 
-npx knext migrate:make nome_migrate
+npx knex migrate:make nome_migrate
 
 ## executa as migrations
 
