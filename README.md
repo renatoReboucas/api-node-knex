@@ -2,7 +2,7 @@
 api feita em node usando o knex com sqlite
 
 
-##cria socket db e configura o modulo do sqlite
+## cria socket db e configura o modulo do sqlite
 
 yarn add knex 
 yarn add sqlite3
