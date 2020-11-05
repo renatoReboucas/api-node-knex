@@ -11,6 +11,7 @@ depois rodar na raiz o "npx knex init" para criar o arquivo de configuracao
 
 setar filename, local onde vai ficar salvo o db e o local onde vai ficar as migrations
 
+```javascript
   development: {
     client: 'sqlite3',
     connection: {
@@ -21,20 +22,24 @@ setar filename, local onde vai ficar salvo o db e o local onde vai ficar as migr
     },
     useNullAsDefault: true,
   },
+```
 
 
 ## criar migrate
 
-npx knext migrate:make nome_migrate
+```
+npx knex migrate:make nome_migrate
+```
 
 ## executa as migrations
 
-npx knex migrate:latest    
+```
+npx knex migrate:latest   
+```
+
+`npx knex`   -   lista os comandos
 
 
-npx knex   -   lista os comandos
+`migrate:rollback`  - apaga as tabelas
 
-
-migrate:rollback  - apaga as tabelas
-
-npx knex migrate:status  - ve as migrations ja executadas
+`npx knex migrate:status`  - ve as migrations ja executadas
