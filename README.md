@@ -4,8 +4,8 @@ api feita em node usando o knex com sqlite
 
 ## cria socket db e configura o modulo do sqlite
 
-yarn add knex 
-yarn add sqlite3
+npm i knex sqlite3
+
 
 depois rodar na raiz o "npx knex init" para criar o arquivo de configuracao
 
